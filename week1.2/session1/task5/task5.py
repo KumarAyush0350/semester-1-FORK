@@ -9,11 +9,23 @@ rivers = {
 print(rivers)
 
 # Add two new entries to the rivers database
+rivers["India"] = "Ganga"
+rivers["Egypt"] = "Nile"
+print(rivers)
 
 # Display all the keys
+print(list(rivers.keys()))
 
 # Display all the values
-
+print(list(rivers.values()))
 # Display all the key:value pairs, as tuples
-
+print(list(rivers.items()))
 # Delete an entry from the rivers database
+dict_remove = rivers.pop("Leeds")
+print(rivers)
+
+
+
+a = 0.15 + 0.15
+b = 0.1 + 0.2
+print(a == b)  # This will print False due to floating-point precision issues
